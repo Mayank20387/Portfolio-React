@@ -1,0 +1,29 @@
+.scroll_up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #0b1e2e;
+  width: 2.8rem;
+  height: 2.8rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0, 0, 0.1, 1);
+  border-radius: 50rem;
+  border: 1px solid #87929b;
+  padding: 1rem;
+}
+
+.scroll_up:hover {
+  border: 1px solid #29b8ff;
+}
+.scroll_up:focus {
+  border: 1px solid #ededed;
+}
+
+.scroll_up > svg {
+  fill: #29b8ff;
+}

@@ -1,0 +1,54 @@
+/* ABOUT ME PAGE */
+
+.about {
+  padding-top: 20px;
+  background-size: 100px;
+  padding: 70px;
+  border-radius: 20px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: #91a5ff21;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px rgba(100, 167, 255, 0.192);
+}
+
+.about-text {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* SKILLS */
+
+.progress-bar-container {
+  height: 20px;
+  width: 100%;
+  margin: 10px 0px;
+  background: white;
+  position: relative; /* relative here */
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgba(0, 173, 107, 0.1);
+}
+
+.progress-bar-indicator {
+  height: 100%;
+  border-radius: 25px;
+  -webkit-mask: linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0);
+  animation: load 4s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  width: 0;
+}
+
+.progress-bar-indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, darkblue, blue, lightblue);
+}

@@ -7,7 +7,6 @@ const styles = {
 };
 const About = () => {
   return (
-    <body>
     <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
@@ -22,10 +21,12 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <h5>
-                “A famous explorer once said that the extraordinary is in what
-                we do, not who we are.” – Tomb Raider
-              </h5>
+              <div className="glow-on-hover">
+                <h5>
+                  “A famous explorer once said that the extraordinary is in what
+                  we do, not who we are.” – Tomb Raider
+                </h5>
+              </div>
             </article>
           </div>
           <p style={styles}>
@@ -35,13 +36,9 @@ const About = () => {
             addition, I frequently play video games to broaden my knowledge and
             problem solving skills :p
           </p>
-          {/* <a href="#contact" className="btn1 btn-primary-1">
-            Let's Talk
-          </a> */}
         </div>
       </div>
     </section>
-    </body>
   );
 };
 export default About;

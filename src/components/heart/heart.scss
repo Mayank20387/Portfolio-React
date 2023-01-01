@@ -1,0 +1,133 @@
+
+$heart-color: #98002e;
+
+@keyframes rotateForwards {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateBackwards {
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+
+.App1 {
+  background: #1f1f38;
+
+  justify-content: space-between;
+
+
+  .right1 {
+    text-align: center;
+    // margin: 20vh 20vw 0px 0px;
+    margin: 20vh;
+
+    .icon {
+      font-size: 2.5rem;
+    }
+
+    .heart {
+      font-size: 3.5rem;
+      color: $heart-color;
+    }
+    
+   
+
+    .plus {
+    
+      background: #1f1f38;
+      color: $heart-color;
+      animation: rotateBackwards 0.5s ease;
+
+      &:hover {
+        cursor: pointer;
+        animation: rotateForwards 0.5s ease;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .App1 {
+    background: #1f1f38;
+    margin-top: -2rem;
+  
+    justify-content: space-between;
+  
+  
+    .right1 {
+      text-align: center;
+      // margin: 20vh 20vw 0px 0px;
+      
+  
+      .icon {
+        font-size: 2.5rem;
+      }
+  
+      .heart {
+        font-size: 3.5rem;
+        color: $heart-color;
+      }
+      
+     
+  
+      .plus {
+      
+        background: #1f1f38;
+        color: $heart-color;
+        animation: rotateBackwards 0.5s ease;
+  
+        &:hover {
+          cursor: pointer;
+          animation: rotateForwards 0.5s ease;
+        }
+      }
+    }
+  }
+  
+}
+
+/* ======media queries for mobile(small devices) =========*/
+
+@media screen and (max-width: 600px) {
+  .App1 {
+    background: #1f1f38;
+    margin-top: -15rem;
+    justify-content: space-between;
+  
+  
+    .right1 {
+      text-align: center;
+      // margin: 20vh 20vw 0px 0px;
+     
+  
+      .icon {
+        font-size: 2.5rem;
+      }
+  
+      .heart {
+        font-size: 3.5rem;
+        color: $heart-color;
+      }
+      
+     
+  
+      .plus {
+      
+        background: #1f1f38;
+        color: $heart-color;
+        animation: rotateBackwards 0.5s ease;
+  
+        &:hover {
+          cursor: pointer;
+          animation: rotateForwards 0.5s ease;
+        }
+      }
+    }
+  }
+  
+}

@@ -7,8 +7,13 @@ const Header = () => {
   return (
     <header>
       <div className="container header_container"></div>
+
       <h5>Hello I'm</h5>
-      <h1>MAYANK KAIM</h1>
+
+      <div className="ani">
+        <h1>MAYANK KAIM</h1>
+      </div>
+
       <h5 className="text-light">SOFTWARE DEVELOPER</h5>
 
       <div className="cta">
@@ -16,12 +21,14 @@ const Header = () => {
           Download CV
         </a>
         <a href="#contact" className="btn btn-primary">
-          Let's Talk
+          Contact
         </a>
       </div>
 
       <div className="me">
-        <img src={ME} alt="me" />
+        <div className="about__me-image1">
+          <img src={ME} alt="me" />
+        </div>
       </div>
     </header>
   );

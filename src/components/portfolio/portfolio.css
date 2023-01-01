@@ -30,3 +30,27 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
+.box-para p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* ======media queries for tablets(medium devices) =========*/
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* ======media queries for mobile(small devices) =========*/
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
+}
